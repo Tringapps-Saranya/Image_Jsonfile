@@ -1,0 +1,22 @@
+<!Doctype html>
+    <head>
+        <title>Input Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1 >User Details</h1>
+        <form action="result.html" method="post">
+            <table>
+                <tr>
+                   <td>Profile Picture</td>
+                   <td><input type="file" id=fileupload name="fileupload"  onchange="disppic(event)"/></td></tr>
+                <tr>
+                   <td>Personal Details</td>
+                   <td><input type="file" id="details"name="details" onchange="myfun(event)"/></td></tr>
+                <tr>
+                   <td><input type="submit" onclick="nextpg()" /></td></tr>
+            </table>
+        </form>
+    </body>
+</html>

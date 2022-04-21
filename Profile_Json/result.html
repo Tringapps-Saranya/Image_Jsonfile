@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result Page</title>
+        <link rel="stylesheet" href="result.css">
+    </head>
+    <body>
+            <div id="details">
+                <img id="fileupload">
+                <br><br>
+                <pre align="left">Name              :<span id="name"></span></pre><br>
+                <pre align="left">Age               :<span id="age"></span></pre><br>
+                <pre align="left">Gender            :<span id="gender"></span></pre><br>
+                <pre align="left">Address           :<span id="address"></span></pre><br>
+            </div>
+        <script>
+            var inputs=localStorage.getItem("details");
+            var details=JSON.parse(inputs);
+            document.getElementById('name').innerHTML =details['Name'];
+            document.getElementById('age').innerHTML =details['Age'];
+            document.getElementById('gender').innerHTML =details['Gender'];
+            document.getElementById('address').innerHTML =details['Address'];
+
+            document.getElementById('fileupload').src=localStorage['picture'];
+        </script>
+    </body>
+</html>
